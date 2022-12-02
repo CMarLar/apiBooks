@@ -14,4 +14,11 @@ router.post('/registro', userCtrl.postUser);
 
 router.post('/login', userCtrl.login);
 
+// //comenta estas hasta que estén
+// router.get('/libros',userCtrl.getlibros);//hay 2 gets? Mira enunciado
+// router.post('/libros',userCtrl.postLibros);
+// router.put('/libros',userCtrl.putLibros);
+// router.delete('/libros',userCtrl.deleteLibros);
+
+
 module.exports = router;
