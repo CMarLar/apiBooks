@@ -1,3 +1,8 @@
+/*
+/////////////////////////////////
+            NO FUNCIONAL
+////////////////////////////////
+*/
 const { response, request } = require("express");//Importa dos métodos de express. Esto se hace para informar las funciones del archivo.
 const connection = require("../database")//importa la conexión con la base de datos
 // const {Student} = require("../classes/studentClass")//ESTO NO ES NECESARIO 

@@ -11,14 +11,13 @@ const userCtrl = require("../controller/user.controller");
 //router.get('/usuario/:id', profCtrl.getUserParams);
 
 router.post('/registro', userCtrl.postUser);
-
 router.post('/login', userCtrl.login);
 
-// //comenta estas hasta que estén
-// router.get('/libros',userCtrl.getlibros);//hay 2 gets? Mira enunciado
-// router.post('/libros',userCtrl.postLibros);
-// router.put('/libros',userCtrl.putLibros);
-// router.delete('/libros',userCtrl.deleteLibros);
+router.get('/libros',userCtrl.getBooks);
+router.get('/libro',userCtrl.getOneBook);//cambio de endpoint de libros a libro O NO FUNCIONA
+router.post('/libros',userCtrl.addNewBook);
+router.put('/libros',userCtrl.modifyBooks);
+router.delete('/libros',userCtrl.deleteBook);
 
 
 module.exports = router;
